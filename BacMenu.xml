@@ -1,0 +1,36 @@
+﻿<slidemenu>
+  <parent id="z">
+    <a class="hreflink" href="default.aspx">Home</a>
+  </parent>
+  <parent id="a">
+    <a class="hreflink">Products</a>
+  </parent>
+  <child id="a_a" >
+    <a class="hreflink" href="ProductList.aspx">Item Entry</a>
+  </child>
+  <child id="a_b" >
+    <a class="hreflink" href="ProductMaster.aspx">Item Master</a>
+  </child>
+
+  <!--<child id="a_b" >
+    <a class="hreflink" href="UnitMaster.aspx">Unit Master</a>
+  </child>
+  <child id="a_c" >
+    <a class="hreflink" href="VatMaster.aspx">Vat MAster</a>
+  </child>-->
+  <parent id="b">
+    <a class="hreflink">Customer</a>    
+  </parent>
+  <child id="b_a">
+    <a class="hreflink" href="CustList.aspx">Customer Maint.</a>
+  </child>
+  <parent id="c">
+    <a class="hreflink">Cash Memo</a>
+  </parent>
+  <child id="c_a">
+    <a class="hreflink" href="ChallanList.aspx?cust_rowid=229">Create / Edit</a>
+  </child>
+  <child id="c_b">
+    <a class="hreflink" href="InvoiceList.aspx?cust_rowid=229">Print</a>
+  </child>
+</slidemenu>

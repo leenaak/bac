@@ -1,0 +1,57 @@
+<%@ Master Language="VB" EnableTheming="true" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+<%@ Register TagPrefix="osm" Namespace="OboutInc.SlideMenu" Assembly="obout_SlideMenu3_Pro_Net" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>Bokil And Company</title>                
+    <link href="styles/style.css" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+    <form runat="server" id="form1">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>    
+        <!-- Content container -->        
+        <div class="innerPageBg">
+            <div class="mainDiv">
+                <div class="header">
+                    <!-- Logo -->
+                    <div style="padding-left: 2px" class="zoneLogo">
+                        <%--<a href="http://www.bacompany.com/Home.aspx">--%>
+                            <img style="border-width: 0px; height: 80px; width: 714px;" id="IMG1" 
+                            alt="Home" src="images/innerHeader.png"></a><br />
+                        <h3 runat="server" id="LoggedUser" style="color:White;position:relative;top:-35px;direction:rtl;width:955px;"><b>
+                        <label ID="lblLoggedUser" runat="server"></label></b></h3>
+                    </div>
+                    <!-- Top zone -->
+                </div>
+                <!-- Content -->                
+                <div class="zoneMainContent">
+                    <!-- Container -->
+                    <div class="textColLeftMenu">
+                        <!-- Left zone -->
+                        <div style="float: left" class="zoneLeft">                            
+                            <osm:SlideMenu Id="xml" runat="server" StyleFolder="styles/xp_true" 
+                                Height="100" MinimumChildrenHeight="0" Speed="10" AutoPostBack="True">
+                            </osm:SlideMenu>
+                        </div>
+                        <!-- Content -->
+                        <div style="float: left" class="zoneContent">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                            <div style="clear: both">&nbsp;</div>                       
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div style="line-height: 0px; height: 0px; clear: both"></div>
+                </div>
+            </div>
+            <div class="footer">
+                <!-- Bottom zone -->
+                <div class="zoneBottom">
+                    <div style="clear:left; padding-top: 8px;azimuth:far-right;">Copyright © Bokil & Co, 2011</div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

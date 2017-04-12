@@ -1,0 +1,20 @@
+cust fin
+
+rowid
+chno
+inv no
+
+challan
+
+rowd id
+cust_fin_rowid
+challan no
+item_tran_rowid
+
+invoice
+
+rowd id
+invoice no
+item_tran_rowid
+i_split
+
